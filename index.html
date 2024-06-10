@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio for Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a0d028f9ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/atanu.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Software Engineer</p> -->
+                <!-- <h1>Hi,I am <span>Atanu</span><br>From Bengaluru</h1> -->
+                <h1>Hello World..!<br>I'm <span>Atanu Ghosh</span></h1>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MyPic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As an Associate Software Engineer, I bring a passion for problem-solving and a solid foundation
+                        in Java, Python,
+                        DSA, MySQL, Spring Boot. Committed to continuous learning, I thrive in collaborative
+                        environments, turning
+                        complex challenges into innovative solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Java,Python</li>
+                            <li><span>Web Technologies</span><br> HTML5, CSS3, JavaScript, REST, Spring Boot</li>
+                            <li><span>Tools & Technologies</span><br>Tableau, Informatica, Git, IntelliJ IDEA, Postman,
+                                VS Code, Swagger</li>
+                            <li><span>Others</span><br>Data structures and algorithms, MySQL, OOPS</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Associate Software Engineer @ Mphasis</span><br>May,2023 - Present |
+                                Bengaluru,India</li>
+                            <li><span>Web Development Intern @ Visudh Ajivam Pvt Ltd</span><br> May,2021 - August,2021 |
+                                Remote</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology in Computer Science and Engineering</span><br>@Gandhi
+                                Institute For Technology (GIFT) <br>2018 - 2022 | Bhubanswar,India</li>
+                        </ul>
+                    </div>
+
+                    <!-- ----------------------------------------------- -->
+                    <!--
+                    <div class="skill_container">
+                        <div>
+                            <h1 class="skilltype">Languages</h1>
+                            <div class="items">
+                                <span class="lang">Python</span>
+                                <span class="lang">Java</span>
+                                <span class="lang">JavaScript</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="skilltype">Databases</h1>
+                            <div class="items">
+                                <span class="lang">MySQL</span>
+                                <span class="lang">SQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="skilltype">Frameworks</h1>
+                            <div class="items">
+                                <span class="lang">ReactJs</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="skilltype">Tools</h1>
+                            <div class="items">
+                                <span class="lang">Git</span>
+                                <span class="lang">Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!-- ------------------------------------------------------------ -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Services------------------ -->
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit, expedita ratione,
+                        quibusdam cupiditate qui perferendis quis ipsa quo facere esse porro suscipit asperiores? Saepe
+                        ducimus commodi numquam blanditiis hic.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit, expedita ratione,
+                        quibusdam cupiditate qui perferendis quis ipsa quo facere esse porro suscipit asperiores? Saepe
+                        ducimus commodi numquam blanditiis hic.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit, expedita ratione,
+                        quibusdam cupiditate qui perferendis quis ipsa quo facere esse porro suscipit asperiores? Saepe
+                        ducimus commodi numquam blanditiis hic.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ------------------------------Portfolio----------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/python.jpg">
+                    <div class="layer">
+                        <h3>Software Prediction Fault and Analysis Using Machine Learning & Python</h3>
+                        <p>Explored various machine learning algorithms, including Naive Bayes, Support Vector Machine
+                            (SVM),
+                            Decision Tree, K-Nearest Neighbour.Achieved an accuracy of 99.9% through rigorous model
+                            evaluation using precision, recall, support, and
+                            F1 score metrics.</p>
+                        <a href="https://github.com/Atanu12-py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/lb.png">
+                    <div class="layer">
+                        <h3>Library Management System Using Java & MySQL</h3>
+                        <p>A Java-based project where I Implemented features for adding, updating, and deleting books in the 
+                            library inventory.Developed a user authentication system for secure access to library resources Incorporated transaction 
+                            functionalities for borrowing and returning books</p>
+                        <a href="https://github.com/Atanu12-py"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Library Management System Using Java & MySQL</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores nihil minus tenetur
+                            ea, facere rerum amet repellat, error, blanditiis excepturi tempora eos. Voluptates, fuga
+                            quasi dolore cupiditate saepe facilis!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="https://github.com/Atanu12-py" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ------------------------------contact---------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>atanughoshbengal@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8670376673</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/atanupy112/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/i/flow/login"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-square-x-twitter"></i></a> -->
+                    </div>
+                    <a href="images/Atanu Ghosh.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemen.style.right = "0";
+        }
+        function closemenu() {
+            sidemen.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5IhKocVE0Q7VsHRHb-470a82PE5rtsGMkIjLB5fBnZj0Ec4ggVBE-NxW2bjuMNWtvHw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
